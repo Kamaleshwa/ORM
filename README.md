@@ -1,30 +1,33 @@
 # Ex02 Django ORM Web Application
-## Date: 
 
 ## AIM
-To develop a Django application to store and retrieve data from a Book database using Object Relational Mapping(ORM).
+To develop a Django application to store and retrieve data from a student database using Object Relational Mapping(ORM).
 
 ## Entity Relationship Diagram
 
-![image](https://github.com/Kamaleshwa/ORM/assets/144980199/67cdecdc-9b06-4d6e-bfef-8e0c7a04e007)
+![image](https://github.com/Kamaleshwa/ORM/assets/144980199/c33148ba-1780-418c-8e84-b2c13ddeb832)
 
 
 ## DESIGN STEPS
 
 ### STEP 1:
-Clone the problem from GitHub
+clone the respository from github
 
 ### STEP 2:
-Create a new app in Django project
+create on admin interface for django
 
 ### STEP 3:
-Enter the code for admin.py and models.py
+create an folder and edit settings.py
 
 ### STEP 4:
-Execute Django admin and create details for 10 books
+makemigration and migrate the changes
+
+### STEP 5:
+create admin.py and write program for admin and models
+
 
 ## PROGRAM
-
+```
 admin.py
 from django.contrib import admin
 from .models import student,studentAdmin
@@ -41,11 +44,12 @@ class student (models.Model):
     email=models.EmailField()
 class studentAdmin(admin.ModelAdmin):
     list_display=('name','rollno','refno','age','email')
+```
 
 ## OUTPUT
+![image](https://github.com/Kamaleshwa/ORM/assets/144980199/15a72bd9-ac74-406e-b95d-1fb24e262dfa)
 
-![image](https://github.com/Kamaleshwa/ORM/assets/144980199/94988e9d-f38c-478c-962d-948cbe3fc4be)
 
 
 ## RESULT
-Thus the program for creating a database using ORM hass been executed successfully
+The program  for creating student database using ORM is successful
